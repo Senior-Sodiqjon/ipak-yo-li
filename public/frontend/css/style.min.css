@@ -390,6 +390,7 @@ mark {
 .img-fluid {
     max-width: 100%;
     height: auto
+
 }
 
 .img-thumbnail {
@@ -14719,7 +14720,6 @@ body {
 /* ////////////////// */
 
 
-@media (max-width: 1400px) and (min-width: 1201px) {}
 
 
 @media (max-width: 1200px) and (min-width: 800px) {
@@ -14740,7 +14740,7 @@ body {
     .new-items-card {
         max-width: 500px;
         width: 500px;
-        background-color: ;
+      
     }
 
 }
@@ -14748,22 +14748,8 @@ body {
 
 
 
-/* 
-  @media (max-width: 1200px) {
-    .map-img {
-      width: 800px; 
-      height: 600px; 
-    }
-  }
-  
-  @media (max-width: 800px) {
-    .map-img {
-      width: 600px; 
-      height: 400px; 
-    }
-  } */
 
-/* o'zgarish */
+
 
 
 #title__text {
@@ -14776,7 +14762,7 @@ body {
 }
 
 
-.title {}
+
 
 
 
@@ -15201,12 +15187,12 @@ span.ant-dot {
         height: 250px;
         /* margin-left: -10%; */
         /* position: absolute; */
-       margin-top: 280px;
-       margin-bottom: -200px;
+        margin-top: 280px;
+        margin-bottom: -200px;
     }
 
     .map__shadow {
-display: none;
+        display: none;
     }
 
 
@@ -15234,10 +15220,24 @@ display: none;
         align-items: center;
         max-width: 300px;
         width: 100%;
-        width:1000px ;
+        width: 1000px;
         padding: 10px 12px;
-        background-color:#02006c;
+        background-color: #02006c;
 
+    }
+
+    .ant-carousel-arrow-left {
+        display: none;
+
+    }
+
+    .ant-carousel-arrow-right {
+        display: none;
+    }
+
+
+    .ant-carousel-dots {
+        display: none;
     }
 }
 
@@ -15245,11 +15245,11 @@ display: none;
 @media (max-width: 1200px) and (min-width: 500px) {
 
 
-    .new-items-img{
+    .new-items-img {
         max-width: 402px;
     }
 
- 
+
 
     .map__shadow {
         margin-left: 10%;
@@ -15268,8 +15268,8 @@ display: none;
         max-width: 500px;
         width: 500px;
         background-color: white;
-       
-        
+
+
     }
 
     .new-items-btn {
@@ -15277,12 +15277,26 @@ display: none;
         align-items: center;
         max-width: 300px;
         width: 100%;
-        width:1000px ;
+        width: 1000px;
         padding: 10px 12px;
-           background-color:#02006c;
+        background-color: #02006c;
 
     }
-    
+
+    .ant-carousel-arrow-left {
+        display: none;
+
+    }
+
+    .ant-carousel-arrow-right {
+        display: none;
+    }
+
+
+    .ant-carousel-dots {
+        display: none;
+    }
+
 }
 
 
@@ -15290,18 +15304,19 @@ display: none;
     .map__img {
         width: 250px;
         height: 250px;
-   
-      
+
+
     }
 
     .map__img {
-        margin-left:55%;
+        margin-left: 55%;
         margin-top: 280px;
-  
+
     }
-#contact-list-text{
-    font-size: 14px;
-}
+
+    #contact-list-text {
+        font-size: 14px;
+    }
 
     .map__shadow {
         display: none;
@@ -15318,10 +15333,17 @@ display: none;
         margin: 15px 0;
     }
 
+    .ant-carousel-arrow-left {
+        display: none;
+
+    }
+
+    .ant-carousel-arrow-right {
+        display: none;
+    }
 
 
+    .ant-carousel-dots {
+        display: none;
+    }
 }
-
-
-
-
