@@ -106,6 +106,8 @@ address {
     line-height: inherit
 }
 
+
+
 dl,
 ol,
 ul {
@@ -475,6 +477,7 @@ pre code {
     flex-wrap: wrap;
     margin-right: -15px;
     margin-left: -15px
+    
 }
 
 .no-gutters {
@@ -7647,10 +7650,9 @@ header .btn-toggle::after {
 
 .mainsection .text h2 {
     font-weight: 800;
-    font-size: 44px;
+    font-size: 37px;
     line-height: 48px;
     color: #1A1A1A;
-    font-family: CoFo-Kak-Black;
     margin-bottom: 18px
 }
 
@@ -8336,11 +8338,13 @@ header .btn-toggle::after {
 }
 
 .coverage-areas {
-    background: rgb(6, 5, 141);
-    background: linear-gradient(90deg, rgba(6, 5, 141, 1) 0%, rgba(22, 92, 189, 1) 54%, rgba(7, 30, 110, 1) 100%);
+    /* background: rgb(6, 5, 141); */
+    /* background: linear-gradient(90deg, rgba(6, 5, 141, 1) 0%, rgba(22, 92, 189, 1) 54%, rgba(7, 30, 110, 1) 100%); */
     padding: 100px 0;
     background-repeat: no-repeat;
-    background-size: cover
+    background-size: cover;
+    margin-top: 100px;
+    
 }
 
 .coverage-areas .title {
@@ -9219,7 +9223,8 @@ header .btn-toggle::after {
 }
 
 .tarif .front .info-blog .plan-price:hover {
-    color: #999
+    /* color: red; */
+
 }
 
 .tarif .front .info-blog.active {
@@ -9422,6 +9427,22 @@ body {
 
 @media (min-width: 576px) {
 
+
+    .ant-carousel-arrow-right{
+        display: none;
+    }
+    
+    .ant__big-box {
+      height: 400px; 
+      padding:  0 20px 80px 20px !important;       overflow: hidden;
+       margin-top: 100px; 
+  
+    }
+    
+    .ant__big-box-title,
+    .ant__big-box-text {
+      font-size: 14px; 
+    }
     .container,
     .container-sm {
         max-width: 540px
@@ -12844,6 +12865,10 @@ body {
         max-width: 1140px
     }
 
+.coverage-areas{
+    margin-top: 200px;
+}
+
 
     .col-xl {
         -ms-flex-preferred-size: 0;
@@ -14305,6 +14330,9 @@ body {
     }
 }
 
+
+
+
 @media (max-width: 1024px) {
     .header-phone {
         display: none
@@ -14327,6 +14355,9 @@ body {
         padding-top: 120px
     }
 
+    .ant-carousel-arrow-right{
+        display: none;
+    }
 
     .mainsection .text h2 {
         font-size: 36px;
@@ -14417,6 +14448,7 @@ body {
     }
 
 
+
     .mainsection .text h2 {
         font-size: 28px;
         line-height: 34px
@@ -14491,7 +14523,13 @@ body {
         font-size: 22px;
         line-height: 26px
     }
+    h2.title{
+    font-size: 28px;
+    line-height: 34px;
+    margin-top: -10px
 }
+}
+
 
 @media (max-width: 768px) {
     .partners {
@@ -14961,6 +14999,18 @@ body {
     list-style-type: none;
     display: flex;
     justify-content: flex-start;
+ 
+}
+
+
+.ant-carousel-element{
+    background-color: white;
+    padding: 20px;
+    margin: 0 10px;
+    max-width:500px;
+    height:auto;
+    padding: 20px 20px 30px 40px;
+    border-radius: 20px;
 }
 
 .ant-carousel-element {
@@ -14985,6 +15035,7 @@ div.ant-carousel-arrow-left {
     top: 40%;
     display: block;
     background: url("http://pvbk.spb.ru/inc/carousel/ant-files/ant-arrow-left.png") no-repeat;
+    position: absolute;
 }
 
 div.ant-carousel-arrow-right {
@@ -14992,6 +15043,7 @@ div.ant-carousel-arrow-right {
     top: 40%;
     display: block;
     background: url("http://pvbk.spb.ru/inc/carousel/ant-files/ant-arrow-right.png") no-repeat;
+    position: absolute;
 }
 
 div.ant-carousel-arrow-left:hover {
@@ -15000,6 +15052,7 @@ div.ant-carousel-arrow-left:hover {
 
 div.ant-carousel-arrow-right:hover {
     opacity: 1.0;
+    
 }
 
 div.ant-carousel-dots {
@@ -15039,12 +15092,28 @@ span.ant-dot {
 
 
 .ant__big-box-text {
-    width: 400px;
+    /* width: 400px; */
     color: #494A6A;
     font-size: 14px;
     font-family: 'Montserrat-SemiBold';
 }
 
+
+.ant__big-box{
+    padding: 20px;
+    width: 30%;
+    display: block;
+    flex: 0 0 auto;
+    height: auto;
+    padding:50px 20px;
+}
+
+.ant-carousel-element {
+    width:2100%; /* O'zingizga kerakli o'lchamni tanlang */
+    /* margin-right: 10px;  */
+    margin-bottom: 50px;
+ max-width: 660px;
+  }
 
 .ant__big-box-title {
     color: #0015C8;
@@ -15347,3 +15416,143 @@ span.ant-dot {
         display: none;
     }
 }
+
+
+
+@media  (max-width: 1080px) {
+    .nav-link{
+          font-size: 12px !important;
+      }
+  
+  }
+  
+
+  @media  (max-width: 996px) {
+    .nav-link{
+          font-size: 11px !important;
+      }
+  
+  }
+
+
+  
+@media  (max-width:981px) {
+    .nav-link{
+          font-size: 14px ;
+      }
+
+      .coverage-areas{
+        margin-top: 200px;
+    }
+  
+  }
+
+h2.title{
+    font-size: 30px;
+    font-weight: normal;
+}
+
+.title-text{
+    font-size: 38px;
+}
+
+#title{
+color:red ;
+}
+
+
+
+#title__text{
+    font-size: 38px;
+    color: black;
+    font-family: "monserta";
+}
+
+
+
+
+
+
+
+
+
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+  }
+
+  .modal-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    width: 50%;
+  }
+
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  label {
+    margin-bottom: 8px;
+  }
+
+  input {
+    padding: 10px;
+    margin-bottom: 16px;
+  }
+
+  button {
+    background: #007BFF;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background: #0056b3;
+  }
+
+  /* Modalni ko'rsatish uchun stil */
+  .show-modal {
+    display: flex;
+  }
+
+
+
+
+
+
+  .ant__big-box {
+    height: 500px;
+    padding:  0 20px 80px 20px !important; /* O'zingizga kerakli height ni tanlang */
+    overflow: hidden;
+    margin-top: 100px;
+
+  }
+  
+  .ant__big-box-title,
+  .ant__big-box-text {
+    font-size: 14px; /* O'zingizga kerakli font-size ni tanlang */
+  }
+  

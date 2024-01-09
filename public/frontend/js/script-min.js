@@ -12103,5 +12103,19 @@ $p.on("click", function (e) {
   new Ant();
 
 
+   function openModal() {
+      document.getElementById('loginModal').classList.add('show-modal');
+    }
+
+    function closeModal() {
+      document.getElementById('loginModal').classList.remove('show-modal');
+    }
+
+    // Modalni yopish uchun, overlay bo'lib o'tgan joyga bosing
+    window.onclick = function (event) {
+      if (event.target === document.getElementById('loginModal')) {
+        closeModal();
+      }
+    }
   
-  
+    
