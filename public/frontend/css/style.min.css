@@ -15791,3 +15791,39 @@ color:red ;
 .litsenzia-title-box{
     margin-bottom: 100px;
 }
+
+
+
+
+.custom-box:hover{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Qalinlik va rangni o'zgartiring */
+
+
+    
+
+
+    /* .custom-box stil */
+.custom-box {
+    margin: 10px; /* Har tomon uchun umumiy margin, masalan, 10px */
+}
+
+/* Desctop qurilmalar uchun */
+@media (min-width: 992px) {
+    .custom-box {
+        margin: 0; /* Umumiy marginni o'zgartiring, masalan, 0 */
+        width: calc(50% - 20px); /* O'ng va chap orasida qolgan joy */
+    }
+}
+
+/* O'ng va chap joylashish */
+.custom-box {
+    float: left; /* Chap joylashish */
+    width: 100%; /* Mobil qurilmalar uchun butun ekran eni */
+}
+
+/* Chap joylashgan elementlarni bitta qatorga o'tkazish */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
