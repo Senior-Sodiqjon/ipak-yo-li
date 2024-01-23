@@ -14829,7 +14829,7 @@ body {
     /* font-family: 'Montserrat'; */
 
     font-family: 'Montserrat', sans-serif;
-    font-weight: 900;
+    /* font-weight: 900; */
 
 }
 
@@ -15596,7 +15596,7 @@ color:red ;
 #title__text{
     font-size: 38px;
     color: black;
-    font-family: "monserta";
+    
 }
 
 
@@ -15695,7 +15695,12 @@ color:red ;
     min-height: 100%;
     padding: 20px 20px;
     border: none;
-   gap: 30;
+    grid-gap: 10px;
+
+}
+
+
+.litsenzya__row div{
 
 }
 
