@@ -68,8 +68,11 @@ body {
     line-height: 1.5;
     color: #292121;
     text-align: left;
-    background-color: #fff
+    background-color: #fff;
+    scroll-behavior: smooth;
 }
+
+
 
 [tabindex="-1"]:focus:not(:focus-visible) {
     outline: 0 !important
@@ -4900,7 +4903,7 @@ a.close.disabled {
     content: none
 }
 
-.modal-content {
+.modal-content2 {
     position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -4911,16 +4914,16 @@ a.close.disabled {
     flex-direction: column;
     width: 50%;
     pointer-events: auto;
-    /* background-color: #fff; */
+    background-color: #fff;
     /* background-clip: padding-box; */
     /* border: 1px solid rgba(0, 0, 0, .2); */
     border-radius: .3rem;
     outline: 0;
     padding: 20px 20px;  
-  margin-top: 20%;
+  margin-top: 10%;
   /* left: 25%; */
-width: 80%;
-left: 8%;
+/* width: 80%; */
+/* left: 8%; */
   /* right: 50%; */
 }
 
@@ -9466,9 +9469,9 @@ body {
 @media (min-width: 576px) {
 
 
-    .ant-carousel-arrow-right{
+    /* .ant-carousel-arrow-right{
         display: none;
-    }
+    } */
     
     .ant__big-box {
       height: 400px; 
@@ -15066,8 +15069,8 @@ div.ant-carousel-arrow-right {
     position: absolute;
     cursor: pointer;
     opacity: 0.6;
-    z-index: 32;
-    background-color: red;
+    /* z-index: 32; */
+   
 }
 
 div.ant-carousel-arrow-left {
@@ -15827,4 +15830,38 @@ color:red ;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Qalinlik va rangni o'zgartiring */
 }
     
+
+
+
+/* /////////////////////////////    */
+
+
+/* Default styles for carousel elements */
+.ant-carousel-list {
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+}
+
+.ant-carousel-element {
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+}
+
+/* Media query for responsiveness */
+@media screen and (max-width: 768px) {
+    .ant-carousel-list {
+        scroll-snap-type: none;
+        overflow-x: auto;
+    }
+
+    .ant-carousel-element {
+        flex: 0 0 100%;
+        margin-right: 10px; /* Add margin between elements */
+    }
+
+    .ant__big-box-text{
+        padding-bottom: 10px;
+    }
+}
 

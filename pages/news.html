@@ -249,21 +249,22 @@
                 <div class="collapse navbar-collapse order-2" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" href="index.html#about">O
+                            <a class="nav-link" href="../index.html#about">O
                                 нас</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="index.html#plan">Тарифы</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html#advantages">Преимущества</a>
-                        </li>
+                       
                         <li class="nav-item">
                             <a class="nav-link" href="index.html#news">Новости</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="index.html#coverage_areas">Зоны
                                 покрытия</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#coverage_areas">Лицензия</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" id href="index.html#contact">Контакты</a>
@@ -289,7 +290,7 @@
 
                         <!-- Modal -->
                         <div id="loginModal" class="modal">
-                            <div class="modal-content">
+                            <div class="modal-content2">
 
                                 <span class="close" onclick="closeModal()">&times;</span>
                                 <h2>Login Formasi</h2>
@@ -434,7 +435,7 @@
 
 
                 <div class="row litsenzya__row">
-                    <div class="col-12 col-md-6 col-lg-3 mb-3 custom-box">
+                    <div class="col-12 col-md-6 col-lg-3 custom-box">
                         <div class="listsezya__box" data-toggle="modal" data-target="#myModal1">
                             <img class="litsenzya-img"  src="../public/frontend/img/litsenzya1.jpeg" alt="Image 1">
                             <div class="litsenzya-text-box">
@@ -446,7 +447,7 @@
                 
                     <div class="modal" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel1" aria-hidden="true">
                         <div class="modal-dialog" role="document">
-                            <div class="modal-content">
+                            <div class="modal-content2">
                                 <div class="modal-header">
                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                         <span aria-hidden="true">&times;</span>
@@ -462,7 +463,7 @@
                         </div>
                     </div>
                 
-                    <div class="col-12 col-md-6 col-lg-3 mb-3 custom-box">
+                    <div class="col-12 col-md-6 col-lg-3 custom-box">
                         <div class="listsezya__box" data-toggle="modal" data-target="#myModal2">
                             <img class="litsenzya-img" src="../public/frontend/img/litsenzya1.jpeg" alt="Image 2">
                             <div class="litsenzya-text-box">
@@ -474,7 +475,7 @@
                 
                     <div class="modal" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel2" aria-hidden="true">
                         <div class="modal-dialog" role="document">
-                            <div class="modal-content">
+                            <div class="modal-content2">
                                 <div class="modal-header">
                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                         <span aria-hidden="true">&times;</span>
@@ -490,7 +491,7 @@
                         </div>
                     </div>
                 
-                    <div class="col-12 col-md-6 col-lg-3 mb-3 custom-box">
+                    <div class="col-12 col-md-6 col-lg-3 custom-box">
                         <div class="listsezya__box" data-toggle="modal" data-target="#myModal3">
                             <img class="litsenzya-img"  src="../public/frontend/img/litsenzya1.jpeg" alt="Image 3">
                             <div class="litsenzya-text-box">
@@ -502,7 +503,7 @@
                 
                     <div class="modal" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel3" aria-hidden="true">
                         <div class="modal-dialog" role="document">
-                            <div class="modal-content">
+                            <div class="modal-content2">
                                 <div class="modal-header">
                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                         <span aria-hidden="true">&times;</span>
@@ -518,7 +519,7 @@
                         </div>
                     </div>
                 
-                    <div class="col-12 col-md-6 col-lg-3 mb-3 custom-box">
+                    <div class="col-12 col-md-6 col-lg-3 custom-box">
                         <div class="listsezya__box" data-toggle="modal" data-target="#myModal4">
                             <img class="litsenzya-img"  src="../public/frontend/img/litsenzya1.jpeg" alt="Image 4">
                             <div class="litsenzya-text-box">
@@ -530,7 +531,7 @@
                 
                     <div class="modal" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel4" aria-hidden="true">
                         <div class="modal-dialog" role="document">
-                            <div class="modal-content">
+                            <div class="modal-content2">
                                 <div class="modal-header">
                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                         <span aria-hidden="true">&times;</span>
@@ -840,10 +841,8 @@
     <!-- Yandex.Metrika counter -->
     <script type="text/javascript">
         (function (m, e, t, r, i, k, a) {
-            m[i] = m[i]
-
-            function() {
-                (m[i].a = m[i].a[]).push(arguments)
+            m[i] = m[i] || function () {
+                (m[i].a = m[i].a || []).push(arguments)
             };
             m[i].l = 1 * new Date();
             for (var j = 0; j < document.scripts.length; j++) {
@@ -852,22 +851,20 @@
                 }
             }
             k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(
-                k, a)
-        })
-            (window, document, "script", "../mc.yandex.ru/metrika/tag.js", "ym");
-
+                k, a);
+        })(window, document, "script", "../mc.yandex.ru/metrika/tag.js", "ym");
+    
         ym(94186121, "init", {
             clickmap: true,
             trackLinks: true,
             accurateTrackBounce: true
         });
-
-
-            // $(window).on('load', function () {
-
-            //       $(".loader").delay(2000).fadeOut("slow");
-            // });
+    
+        // $(window).on('load', function () {
+        //     $(".loader").delay(2000).fadeOut("slow");
+        // });
     </script>
+    
 
     <noscript>
         <div><img src="https://mc.yandex.ru/watch/94186121" style="position:absolute; left:-9999px;" alt />
