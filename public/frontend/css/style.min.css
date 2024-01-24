@@ -4911,13 +4911,17 @@ a.close.disabled {
     flex-direction: column;
     width: 50%;
     pointer-events: auto;
-    background-color: #fff;
+    /* background-color: #fff; */
     /* background-clip: padding-box; */
-    border: 1px solid rgba(0, 0, 0, .2);
+    /* border: 1px solid rgba(0, 0, 0, .2); */
     border-radius: .3rem;
     outline: 0;
     padding: 20px 20px;  
-  
+  margin-top: 20%;
+  /* left: 25%; */
+width: 80%;
+left: 8%;
+  /* right: 50%; */
 }
 
 .modal-backdrop {
@@ -4949,7 +4953,7 @@ a.close.disabled {
     -ms-flex-pack: justify;
     justify-content: space-between;
     padding: 1rem;
-    border-bottom: 1px solid #dee2e6;
+    /* border-bottom: 1px solid #dee2e6; */
     border-top-left-radius: calc(0.3rem - 1px);
     border-top-right-radius: calc(0.3rem - 1px)
 }
@@ -4985,7 +4989,7 @@ a.close.disabled {
     -ms-flex-pack: end;
     justify-content: flex-end;
     padding: .75rem;
-    border-top: 1px solid #dee2e6;
+    /* border-top: 1px solid #dee2e6; */
     border-bottom-right-radius: calc(0.3rem - 1px);
     border-bottom-left-radius: calc(0.3rem - 1px)
 }
@@ -12891,6 +12895,8 @@ body {
 
 @media (min-width: 1200px) {
 
+
+
     .container,
     .container-lg,
     .container-md,
@@ -15185,6 +15191,22 @@ span.ant-dot {
 
 }
 
+
+
+.language-nomer{
+    background-color: #02006c;;
+    padding: 12px 18px !important;
+    border-radius: 111px;
+    color: white !important;
+    /* margin-top: 20px !important; */
+}
+
+
+.nomer-mar{
+    margin-left: 6px;
+}
+
+
 .new-items-card h4,
 .new-items-card a {
     margin: 35px 0;
@@ -15449,8 +15471,15 @@ span.ant-dot {
     .map__img {
         width: 250px;
         height: 250px;
+    }
 
 
+    .info-list{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 35px;
     }
 
     .map__img {
@@ -15514,9 +15543,7 @@ span.ant-dot {
       }
 
 
-      .language-nomer{
-        display: block;
-      }
+
 
       .language{
         display: flex;
@@ -15790,6 +15817,7 @@ color:red ;
 
 .litsenzia-title-box{
     margin-bottom: 100px;
+    
 }
 
 
@@ -15797,33 +15825,6 @@ color:red ;
 
 .custom-box:hover{
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Qalinlik va rangni o'zgartiring */
-
-
+}
     
 
-
-    /* .custom-box stil */
-.custom-box {
-    margin: 10px; /* Har tomon uchun umumiy margin, masalan, 10px */
-}
-
-/* Desctop qurilmalar uchun */
-@media (min-width: 992px) {
-    .custom-box {
-        margin: 0; /* Umumiy marginni o'zgartiring, masalan, 0 */
-        width: calc(50% - 20px); /* O'ng va chap orasida qolgan joy */
-    }
-}
-
-/* O'ng va chap joylashish */
-.custom-box {
-    float: left; /* Chap joylashish */
-    width: 100%; /* Mobil qurilmalar uchun butun ekran eni */
-}
-
-/* Chap joylashgan elementlarni bitta qatorga o'tkazish */
-.row::after {
-    content: "";
-    clear: both;
-    display: table;
-}
