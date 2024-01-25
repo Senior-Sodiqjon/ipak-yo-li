@@ -15840,12 +15840,14 @@ color:red ;
 .ant-carousel-list {
     display: flex;
     overflow-x: scroll;
-    scroll-snap-type: x mandatory;
+    scroll-snap-type: x proximity; /* proximity deb o'zgartirildi */
+    scroll-padding: 0 10px; /* O'zgartirilgan scroll-padding qiymati */
+   
 }
 
 .ant-carousel-element {
     flex: 0 0 auto;
-    scroll-snap-align: start;
+    scroll-snap-align: center; /* center deb o'zgartirildi */
 }
 
 /* Media query for responsiveness */
