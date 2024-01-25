@@ -15923,7 +15923,7 @@ color:red ;
 }
 
 .box2 {
-    background-color: #f8f8f8;
+
 }
 
 /* Responsive Media Query */
@@ -15936,10 +15936,4 @@ color:red ;
         flex: 1;
         margin: 10px;
     }
-}
-
-
-.new__box{
-    display: flex;
-    justify-content: ;
 }
