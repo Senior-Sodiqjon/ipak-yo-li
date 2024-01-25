@@ -15939,32 +15939,7 @@ color:red ;
 }
 
 
-
-.katta-div {
+.new__box{
     display: flex;
-}
-
-.box {
-    height: 100vh; /* Full height of the viewport */
-}
-
-.box1 {
-    width: 100%;
-    background-color: #3498db;
-}
-
-.box2 {
-    /* width: 30%; */
-    background-color: #e74c3c;
-    padding: 20px; /* Add padding for better appearance */
-}
-
-.box2 h2 {
-    color: #fff; /* Text color */
-}
-
-@media only screen and (max-width: 768px) {
-    .box2 {
-        width: 100%;
-    }
+    justify-content: ;
 }
