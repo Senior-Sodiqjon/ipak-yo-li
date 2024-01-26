@@ -714,7 +714,7 @@ pre code {
 }
 
 .coverage-areas #title {
-    color: white;
+    color: #00108e;
 }
 
 .order-first {
@@ -6826,7 +6826,7 @@ button.bg-dark:hover {
 }
 
 .text-white {
-    color: #fff !important
+    color: #00108e;
 }
 
 .text-primary {
@@ -8405,6 +8405,7 @@ header .btn-toggle::after {
     -ms-flex-pack: center;
     justify-content: center;
     position: relative
+    
 }
 
 .coverage-areas .uzb-map-block .logo {
@@ -8414,9 +8415,14 @@ header .btn-toggle::after {
 }
 
 .coverage-areas .uzb-map-block .map-uzb {
+    
     width: 80%;
     -o-object-fit: contain;
     object-fit: contain
+}
+
+.map-shadow{
+    filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
 }
 
 .coverage-areas .uzb-map-block .text-block {
